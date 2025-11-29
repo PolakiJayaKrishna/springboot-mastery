@@ -1,0 +1,9 @@
+# IDE junk
+.idea/
+*.iml
+
+# Build output
+target/
+
+# Maven wrapper junk
+.mvn/
