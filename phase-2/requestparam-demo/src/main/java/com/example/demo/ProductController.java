@@ -33,4 +33,11 @@ public class ProductController{
         message = message + " | page: " + page + " | size: "  + size;
         return message;
     }
+    @GetMapping("/test")
+    public String testTypes(
+            @RequestParam int count,
+            @RequestParam boolean active,
+            @RequestParam double price){
+        return "Count: " + count + " | Active: " + active + " | Price: " + price;
+    }
 }

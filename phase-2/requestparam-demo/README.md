@@ -92,6 +92,33 @@ This project demonstrates how to use `@RequestParam` in Spring Boot for filterin
 > Example: `/products/search?keyword=laptop&page=2`
 ![Keyword + pagination](./screenshots/10-search-keyword-laptop-page.png)
 
+---
+
+### 1️⃣1️⃣ Valid Conversion of Multiple Typed Request Parameters
+> `/test?count=5&active=true&price=99.50`
+
+Spring Boot automatically converts:
+- `count` → int
+- `active` → boolean
+- `price` → double
+
+![Valid conversion](./screenshots/11-multiple-types-success.png)
+
+---
+
+### 1️⃣2️⃣ Invalid Type Conversion (Triggers 400 Bad Request)
+> `/test?count=abc&active=yes&price=free`
+
+Since Spring can't convert the values to required types, it throws:
+
+**❌ 400 Bad Request**
+
+![Invalid conversion](./screenshots/12-multiple-types-invalid.png)
+
+> *(We will handle this later using validation or global exception handling.)*
+
+---
+
 
 ## 👨‍💻 Author
 
