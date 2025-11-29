@@ -70,6 +70,31 @@ This project demonstrates how to use `@RequestParam` in Spring Boot for filterin
 
 ---
 
+
+### 7️⃣ Search With Multiple Query Parameters (`keyword + page + size`)
+> Example: `/products/search?keyword=tv&page=1&size=5`
+![Multiple params](./screenshots/7-search-with-multiple-params.png)
+
+---
+
+### 8️⃣ Search With Only Pagination Parameters (`page + size`)
+> Example: `/products/search?page=0&size=10`
+![Pagination only](./screenshots/8-search-only-page-size.png)
+
+---
+
+### 9️⃣ Search With Only Keyword
+> Example: `/products/search?keyword=phone`
+![Keyword only](./screenshots/9-search-keyword-phone.png)
+
+---
+
+### 🔟 Search With Keyword + Pagination
+> Example: `/products/search?keyword=laptop&page=2`
+![Keyword + pagination](./screenshots/10-search-keyword-laptop-page.png)
+
+--
+
 ## 👨‍💻 Author
 
 **Polaki Jaya Krishna**  

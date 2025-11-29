@@ -21,4 +21,16 @@ public class ProductController{
     public String searchProducts(@RequestParam (defaultValue = "all") String category){
         return "Searching products in category: " + category;
     }
+    @GetMapping("/products/search")
+    public String searchProducts (
+            @RequestParam (required = false , defaultValue =  "") String keyword,
+            @RequestParam (required = false , defaultValue =  "0") int page,
+            @RequestParam (required = false , defaultValue = "10") int size) {
+
+        String message = "Searching Products";
+        if(!keyword.isEmpty())
+            message = message + " with keywords: " + keyword;
+        message = message + " | page: " + page + " | size: "  + size;
+        return message;
+    }
 }
