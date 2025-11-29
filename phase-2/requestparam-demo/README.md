@@ -38,38 +38,37 @@ This project demonstrates how to use `@RequestParam` in Spring Boot for filterin
 ---
 
 ## 🖼 Output Screenshots
+## 🖼 Output Screenshots
 
-### ❌ Missing Required Parameter
-![Missing param error](./screenshots/1-missing-param-error.png)
-
-    
----
-
-### ✔ Filter Products by Category
-![Filter with category](./screenshots/2-filter-with-category.png)
+### 1️⃣ Missing Required Parameter
+![Missing param](./screenshots/1-missing-param-error.png)
 
 ---
 
-### ✔ Products with Explicit Category
+### 2️⃣ Filter Products by Category
+![Filter products](./screenshots/2-filter-with-category.png)
+
+---
+
+### 3️⃣ Products with Explicit Category Value
 ![Products filtered](./screenshots/3-products-with-category.png)
 
 ---
 
-### ✔ Products Without Parameter (Shows All)
-![Products no param](./screenshots/4-products-without-param.png)
+### 4️⃣ Products Without Any Parameter
+![All products](./screenshots/4-products-without-param.png)
 
 ---
 
-### ✔ Search Products with Category
+### 5️⃣ Search Products by Category
 ![Search category](./screenshots/5-search-with-category.png)
 
 ---
 
-### ✔ Search Using Default Param Value (`all`)
-![Search default](./screenshots/6-search-default-value.png)
+### 6️⃣ Search Using Default Value (`all`)
+![Default search](./screenshots/6-search-default-value.png)
 
 ---
-
 
 ### 7️⃣ Search With Multiple Query Parameters (`keyword + page + size`)
 > Example: `/products/search?keyword=tv&page=1&size=5`
@@ -93,7 +92,6 @@ This project demonstrates how to use `@RequestParam` in Spring Boot for filterin
 > Example: `/products/search?keyword=laptop&page=2`
 ![Keyword + pagination](./screenshots/10-search-keyword-laptop-page.png)
 
---
 
 ## 👨‍💻 Author
 
